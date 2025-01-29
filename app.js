@@ -4,9 +4,12 @@ let but = document.getElementsByClassName('button-add')[0];
 let inp = document.getElementsByClassName('input-name')[0];
 let listAmigo = document.getElementsByClassName('result-list')[0];
 let nombre = document.getElementsByClassName('nombre-lista');
+let forAmigo = document.getElementsByClassName('for-amigo_secreto')[0];
+
 
 
 const agregarAmigo = (e) => {
+  e.preventDefault();
   let amigo = document.createElement('li'); // Crear un elemento <li>
   amigo.className = 'nombre-lista'
   amigo.textContent = inp.value; // Asignar el texto ingresado en el input
@@ -14,14 +17,15 @@ const agregarAmigo = (e) => {
 };
 
 const sortearAmigo = ()=>{
- let listSort = []
- for (let index = 0; index < nombre.length; index++) {
-  listSort.push(nombre[index].textContent)
- }
+  let listSort = []
+  for (let index = 0; index < nombre.length; index++) {
+    listSort.push(nombre[index].textContent)
+  }
  let nomSort = Math.floor(Math.random()*listSort.length)
  
  alert(listSort[nomSort])
 
 }
+
 
 
