@@ -19,10 +19,8 @@ const sortearAmigo = ()=>{
   listSort.push(nombre[index].textContent)
  }
  let nomSort = Math.floor(Math.random()*listSort.length)
-
+ 
  alert(listSort[nomSort])
-
-
 
 }
 
