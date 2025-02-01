@@ -173,3 +173,11 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+
+/* ----------------- */
+
+.nombre-eleccion{
+    list-style-type: none;
+    border-bottom: 2rem;
+}
