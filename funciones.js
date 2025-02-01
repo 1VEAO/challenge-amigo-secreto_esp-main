@@ -34,7 +34,7 @@ butSend.addEventListener('click', (e)=>{
 buttonDraw.addEventListener('click', (e)=>{
  e.preventDefault();
  if (nombrelista.length > 0) {
-  if ((nombrelista.length % 2) == 0 ) {
+  
    while (nombrelista.length > 0) {
     nombrelista[0].parentNode.removeChild(nombrelista[0]); // Elimina el primer elemento hasta que no quede ninguno
    }
@@ -44,9 +44,7 @@ buttonDraw.addEventListener('click', (e)=>{
    amigo.textContent = `tu amigo secreto es ${list1[nomSort]}`;
    resultList.appendChild(amigo)
    list1 = []
-  } else (
-   alert('para que se pueda hacer el sorteo la cantidad de participantes debe ser par')
-  )
+  
  } else {
   alert('ingresa los nombres para hacer el emparejamiento')
  }
